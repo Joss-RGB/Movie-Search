@@ -4,6 +4,7 @@ import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { useContext, useEffect } from "react";
 import { SearchContext } from "./context/SearchContext";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const { query, setQuery, movies, setMovies, loading, setLoading, error, setError } =
@@ -85,6 +86,7 @@ function App() {
         ))}
       </div>
       <SpeedInsights />
+      <Analytics />
     </div>
   );
 }
