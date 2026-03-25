@@ -3,6 +3,7 @@ import MovieCard from "./components/movieCards";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { useContext, useEffect } from "react";
 import { SearchContext } from "./context/SearchContext";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   const { query, setQuery, movies, setMovies, loading, setLoading, error, setError } =
@@ -83,6 +84,7 @@ function App() {
           <MovieCard key={movie.id} movie={movie} />
         ))}
       </div>
+      <SpeedInsights />
     </div>
   );
 }
