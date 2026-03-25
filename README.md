@@ -85,4 +85,4 @@ src/
 Developed by Jose as a practice project with React, Vite, and API integration.
 
 ## License
-This project is licensed under the MIT License. You are free to use, modify, and distribute it.
+This project is licensed under the MIT License. You are free to use, modify, and distribute it. 
